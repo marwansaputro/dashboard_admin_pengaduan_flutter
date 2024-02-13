@@ -21,21 +21,21 @@ class SideMenu extends StatelessWidget {
             svgSrc: pathIconDashboard,
             press: () {},
           ),
-          // DrawerListTile(
-          //   title: "Transaction",
-          //   svgSrc: "assets/icons/menu_tran.svg",
-          //   press: () {},
-          // ),
-          // DrawerListTile(
-          //   title: "Task",
-          //   svgSrc: "assets/icons/menu_task.svg",
-          //   press: () {},
-          // ),
-          // DrawerListTile(
-          //   title: "Documents",
-          //   svgSrc: "assets/icons/menu_doc.svg",
-          //   press: () {},
-          // ),
+          DrawerListTile(
+            title: "Transaction",
+            svgSrc: "assets/icons/menu_tran.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Task",
+            svgSrc: "assets/icons/menu_task.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Documents",
+            svgSrc: "assets/icons/menu_doc.svg",
+            press: () {},
+          ),
           // DrawerListTile(
           //   title: "Store",
           //   svgSrc: "assets/icons/menu_store.svg",
@@ -80,12 +80,15 @@ class DrawerListTile extends StatelessWidget {
       horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
         svgSrc,
-        colorFilter: ColorFilter.mode(darkblue, BlendMode.srcIn),
+        colorFilter: ColorFilter.mode(primaryGrey, BlendMode.srcIn),
         height: 16,
       ),
       title: Text(
         title,
-        style: TextStyle(color: darkblue),
+        style: Theme.of(context)
+            .textTheme
+            .titleMedium!
+            .copyWith(color: primaryGrey, fontWeight: FontWeight.w500),
       ),
     );
   }

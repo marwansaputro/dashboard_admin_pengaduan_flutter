@@ -18,6 +18,13 @@ class FileInfoCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: white,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
+        boxShadow: [
+          BoxShadow(
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.10),
+              blurRadius: 10,
+              spreadRadius: -5,
+              offset: const Offset(0, 5)),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

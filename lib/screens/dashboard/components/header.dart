@@ -49,14 +49,21 @@ class ProfileCard extends StatelessWidget {
         vertical: defaultPadding / 2,
       ),
       decoration: BoxDecoration(
-        color: darkblue,
+        color: white,
+        boxShadow: [
+          BoxShadow(
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.10),
+              blurRadius: 10,
+              spreadRadius: -5,
+              offset: const Offset(0, 5)),
+        ],
         borderRadius: const BorderRadius.all(Radius.circular(10)),
         border: Border.all(color: Colors.white10),
       ),
       child: Row(
         children: [
           Image.asset(
-            pathImageAvatar,
+            pathImageAvatarAdmin,
             height: 38,
           ),
           if (!Responsive.isMobile(context))
@@ -82,7 +89,7 @@ class SearchField extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         hintText: "Search",
-        fillColor: darkblue,
+        fillColor: white,
         filled: true,
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
@@ -92,9 +99,9 @@ class SearchField extends StatelessWidget {
           onTap: () {},
           child: Container(
             padding: EdgeInsets.all(defaultPadding * 0.75),
-            margin: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+            margin: EdgeInsets.symmetric(horizontal: defaultPadding / 3),
             decoration: BoxDecoration(
-              color: primaryColor,
+              color: primaryGreen,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
             ),
             child: SvgPicture.asset(pathIconSearch),

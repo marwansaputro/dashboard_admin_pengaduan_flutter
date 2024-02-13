@@ -16,16 +16,23 @@ class StorageDetails extends StatelessWidget {
       decoration: BoxDecoration(
         color: white,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
+        boxShadow: [
+          BoxShadow(
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.10),
+              blurRadius: 10,
+              spreadRadius: 1,
+              offset: const Offset(0, 5)),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Storage Details",
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w500,
-            ),
+            "Diagram Complaint",
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(color: darkblue, fontWeight: FontWeight.w600),
           ),
           SizedBox(height: defaultPadding),
           Chart(),

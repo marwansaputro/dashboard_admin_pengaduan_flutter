@@ -11,6 +11,8 @@ const white = Color(0xffFFFFFF);
 const primaryGrey = Color(0xFFB6CEE7);
 const grey = Color(0xFFFAFAFA);
 const darkGrey = Color(0xFFC3C3C3);
+const Red = Color(0xFFEE2727);
+const Yellow = Color(0xFFFFCF26);
 
 const defaultPadding = 16.0;
 

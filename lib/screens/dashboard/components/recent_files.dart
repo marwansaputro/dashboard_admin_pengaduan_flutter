@@ -14,6 +14,13 @@ class RecentFiles extends StatelessWidget {
       padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
         color: white,
+        boxShadow: [
+          BoxShadow(
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.10),
+              blurRadius: 10,
+              spreadRadius: 1,
+              offset: const Offset(0, 5)),
+        ],
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
@@ -21,22 +28,44 @@ class RecentFiles extends StatelessWidget {
         children: [
           Text(
             "Recent Files",
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(color: darkblue, fontWeight: FontWeight.w700),
           ),
           SizedBox(
             width: double.infinity,
             child: DataTable(
               columnSpacing: defaultPadding,
+
               // minWidth: 600,
               columns: [
                 DataColumn(
-                  label: Text("File Name"),
+                  label: Text(
+                    "File Name",
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall
+                        ?.copyWith(color: black, fontWeight: FontWeight.w600),
+                  ),
                 ),
                 DataColumn(
-                  label: Text("Date"),
+                  label: Text(
+                    "Date",
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall
+                        ?.copyWith(color: black, fontWeight: FontWeight.w600),
+                  ),
                 ),
                 DataColumn(
-                  label: Text("Size"),
+                  label: Text(
+                    "Size",
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall
+                        ?.copyWith(color: black, fontWeight: FontWeight.w600),
+                  ),
                 ),
               ],
               rows: List.generate(
