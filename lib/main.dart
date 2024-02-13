@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: true,
       title: 'Dashboard Admin Integra',
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: white,
+        scaffoldBackgroundColor: grey,
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-            .apply(bodyColor: Colors.white),
-        canvasColor: darkblue,
+            .apply(bodyColor: black),
+        canvasColor: white,
       ),
       home: MultiProvider(
         providers: [

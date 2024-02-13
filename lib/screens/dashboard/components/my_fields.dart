@@ -23,6 +23,7 @@ class MyFiles extends StatelessWidget {
                     color: primaryGreen, fontWeight: FontWeight.w600)),
             ElevatedButton.icon(
               style: TextButton.styleFrom(
+                backgroundColor: primaryGreen,
                 padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding * 1.5,
                   vertical:
