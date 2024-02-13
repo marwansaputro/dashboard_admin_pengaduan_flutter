@@ -1,11 +1,10 @@
 import 'package:admin/controllers/MenuAppController.dart';
 import 'package:admin/responsive.dart';
 import 'package:admin/value/path_image.dart';
+import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-
-import '../../../constants.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -57,7 +56,7 @@ class ProfileCard extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            pathImageAvatar1,
+            pathImageAvatar,
             height: 38,
           ),
           if (!Responsive.isMobile(context))
@@ -98,7 +97,7 @@ class SearchField extends StatelessWidget {
               color: primaryColor,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
             ),
-            child: SvgPicture.asset("assets/icons/Search.svg"),
+            child: SvgPicture.asset(pathIconSearch),
           ),
         ),
       ),

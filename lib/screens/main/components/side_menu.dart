@@ -1,5 +1,5 @@
-import 'package:admin/constants.dart';
 import 'package:admin/value/path_image.dart';
+import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -18,7 +18,7 @@ class SideMenu extends StatelessWidget {
           ),
           DrawerListTile(
             title: "Dashboard",
-            svgSrc: "assets/icons/menu_dashboard.svg",
+            svgSrc: pathIconDashboard,
             press: () {},
           ),
           // DrawerListTile(
@@ -85,7 +85,7 @@ class DrawerListTile extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: TextStyle(color: white),
+        style: TextStyle(color: primaryGrey),
       ),
     );
   }

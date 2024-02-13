@@ -1,6 +1,6 @@
+import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
 import 'chart.dart';
 import 'storage_info_card.dart';
 
@@ -30,28 +30,28 @@ class StorageDetails extends StatelessWidget {
           SizedBox(height: defaultPadding),
           Chart(),
           StorageInfoCard(
-            svgSrc: "assets/icons/Documents.svg",
-            title: "Documents Files",
-            amountOfFiles: "1.3GB",
-            numOfFiles: 1328,
-          ),
-          StorageInfoCard(
             svgSrc: "assets/icons/media.svg",
-            title: "Media Files",
+            title: "Incoming Complaint",
             amountOfFiles: "15.3GB",
             numOfFiles: 1328,
           ),
           StorageInfoCard(
             svgSrc: "assets/icons/folder.svg",
-            title: "Other Files",
+            title: "Complaint Process",
             amountOfFiles: "1.3GB",
             numOfFiles: 1328,
           ),
           StorageInfoCard(
             svgSrc: "assets/icons/unknown.svg",
-            title: "Unknown",
+            title: "Complaint rejected",
             amountOfFiles: "1.3GB",
             numOfFiles: 140,
+          ),
+          StorageInfoCard(
+            svgSrc: "assets/icons/Documents.svg",
+            title: "Complaint Completed",
+            amountOfFiles: "1.3GB",
+            numOfFiles: 1328,
           ),
         ],
       ),
