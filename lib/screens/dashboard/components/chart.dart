@@ -1,7 +1,6 @@
+import 'package:admin/value/theme.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-
-import '../../../constants.dart';
 
 class Chart extends StatelessWidget {
   const Chart({
@@ -30,7 +29,7 @@ class Chart extends StatelessWidget {
                 Text(
                   "29.1",
                   style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                        color: Colors.white,
+                        color: darkblue,
                         fontWeight: FontWeight.w600,
                         height: 0.5,
                       ),
@@ -47,25 +46,25 @@ class Chart extends StatelessWidget {
 
 List<PieChartSectionData> paiChartSelectionData = [
   PieChartSectionData(
-    color: primaryColor,
+    color: primaryGreen,
     value: 25,
     showTitle: false,
     radius: 25,
   ),
   PieChartSectionData(
-    color: Color(0xFF26E5FF),
+    color: primaryColor,
     value: 20,
     showTitle: false,
     radius: 22,
   ),
   PieChartSectionData(
-    color: Color(0xFFFFCF26),
+    color: Yellow,
     value: 10,
     showTitle: false,
     radius: 19,
   ),
   PieChartSectionData(
-    color: Color(0xFFEE2727),
+    color: Red,
     value: 15,
     showTitle: false,
     radius: 16,
