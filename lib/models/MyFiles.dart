@@ -21,9 +21,9 @@ List demoMyFiles = [
     title: "Incoming Complaint",
     numOfFiles: 1328,
     svgSrc: "assets/icons/Documents.svg",
-    totalStorage: "1.9GB",
+    totalStorage: "8.9GB",
     color: primaryColor,
-    percentage: 35,
+    percentage: 70,
   ),
   CloudStorageInfo(
     title: "Complaint Process",

@@ -43,15 +43,19 @@ class FileInfoCard extends StatelessWidget {
                 ),
                 child: SvgPicture.asset(
                   info.svgSrc!,
-                  colorFilter: ColorFilter.mode(
-                      info.color ?? Colors.black, BlendMode.srcIn),
+                  colorFilter:
+                      ColorFilter.mode(info.color ?? black, BlendMode.srcIn),
                 ),
               ),
-              Icon(Icons.more_vert, color: Colors.white54)
+              Icon(Icons.more_vert, color: darkGrey)
             ],
           ),
           Text(
             info.title!,
+            style: Theme.of(context)
+                .textTheme
+                .titleSmall
+                ?.copyWith(color: black, fontWeight: FontWeight.w600),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
@@ -67,14 +71,14 @@ class FileInfoCard extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .bodySmall!
-                    .copyWith(color: Colors.white70),
+                    .copyWith(color: black),
               ),
               Text(
                 info.totalStorage!,
                 style: Theme.of(context)
                     .textTheme
                     .bodySmall!
-                    .copyWith(color: Colors.white),
+                    .copyWith(color: black),
               ),
             ],
           )
