@@ -14,8 +14,6 @@ const darkGrey = Color(0xFFC3C3C3);
 const Red = Color(0xFFEE2727);
 const Yellow = Color(0xFFFFCF26);
 
-const defaultPadding = 16.0;
-
 final nLightTheme = ThemeData.light().copyWith(
   colorScheme: ColorScheme.fromSeed(
     seedColor: const Color(0xff307FE2),

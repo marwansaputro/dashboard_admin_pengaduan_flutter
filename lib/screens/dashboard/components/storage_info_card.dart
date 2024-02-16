@@ -1,3 +1,4 @@
+import 'package:admin/layout/padding.dart';
 import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -40,21 +41,32 @@ class StorageInfoCard extends StatelessWidget {
                 children: [
                   Text(
                     title,
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall!
+                        .copyWith(color: black, fontWeight: FontWeight.w600),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
+                  SizedBox(height: 5),
                   Text(
                     "$numOfFiles Files",
                     style: Theme.of(context)
                         .textTheme
                         .bodySmall!
-                        .copyWith(color: Colors.white70),
+                        .copyWith(color: black),
                   ),
                 ],
               ),
             ),
           ),
-          Text(amountOfFiles)
+          Text(
+            amountOfFiles,
+            style: Theme.of(context)
+                .textTheme
+                .titleSmall!
+                .copyWith(color: black, fontWeight: FontWeight.w500),
+          )
         ],
       ),
     );
