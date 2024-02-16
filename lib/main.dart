@@ -2,7 +2,6 @@ import 'package:admin/controllers/MenuAppController.dart';
 import 'package:admin/screens/main/main_screen.dart';
 import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -18,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Dashboard Admin Integra',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: grey,
-        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-            .apply(bodyColor: black),
+        // textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+        //     .apply(bodyColor: black),
         canvasColor: darkblue,
       ),
       home: MultiProvider(

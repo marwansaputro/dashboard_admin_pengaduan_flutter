@@ -14,3 +14,7 @@ const pathIconStar = 'assets/images/icon/staricon.svg';
 const pathIconWhatsapp = 'assets/images/icon/whatsapp.svg';
 const pathIconDashboard = 'assets/images/icons/menu_dashboard.svg';
 const pathIconSearch = 'assets/images/icons/search.svg';
+const pathIconIcoming = 'assets/images/icons/complaint-icon.svg';
+const pathIconProcess = 'assets/images/icons/administrator-developer-icon.svg';
+const pathIconReject = 'assets/images/icons/wrong-file-icon.svg';
+const pathIconCompleted = 'assets/images/icons/right-file-icon.svg';

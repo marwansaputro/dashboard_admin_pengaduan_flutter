@@ -1,3 +1,4 @@
+import 'package:admin/layout/padding.dart';
 import 'package:admin/value/theme.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,14 @@ class Chart extends StatelessWidget {
                         height: 0.5,
                       ),
                 ),
-                Text("of 128GB")
+                SizedBox(height: 3),
+                Text(
+                  "of 128GB",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodySmall!
+                      .copyWith(color: black, fontWeight: FontWeight.w500),
+                )
               ],
             ),
           ),

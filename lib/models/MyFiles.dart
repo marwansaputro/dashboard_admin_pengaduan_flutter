@@ -1,3 +1,4 @@
+import 'package:admin/value/path_image.dart';
 import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -20,15 +21,15 @@ List demoMyFiles = [
   CloudStorageInfo(
     title: "Incoming Complaint",
     numOfFiles: 1328,
-    svgSrc: "assets/icons/Documents.svg",
-    totalStorage: "1.9GB",
+    svgSrc: pathIconIcoming,
+    totalStorage: "8.9GB",
     color: primaryColor,
-    percentage: 35,
+    percentage: 70,
   ),
   CloudStorageInfo(
     title: "Complaint Process",
     numOfFiles: 1328,
-    svgSrc: "assets/icons/google_drive.svg",
+    svgSrc: pathIconProcess,
     totalStorage: "2.9GB",
     color: Yellow,
     percentage: 35,
@@ -36,7 +37,7 @@ List demoMyFiles = [
   CloudStorageInfo(
     title: "Complaint rejected",
     numOfFiles: 1328,
-    svgSrc: "assets/icons/one_drive.svg",
+    svgSrc: pathIconReject,
     totalStorage: "1GB",
     color: Red,
     percentage: 10,
@@ -44,7 +45,7 @@ List demoMyFiles = [
   CloudStorageInfo(
     title: "Complaint Completed",
     numOfFiles: 5328,
-    svgSrc: "assets/icons/drop_box.svg",
+    svgSrc: pathIconCompleted,
     totalStorage: "7.3GB",
     color: primaryGreen,
     percentage: 78,

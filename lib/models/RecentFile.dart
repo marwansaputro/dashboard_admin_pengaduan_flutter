@@ -13,7 +13,8 @@ List demoRecentFiles = [
   ),
   RecentFile(
     icon: "assets/icons/Figma_file.svg",
-    title: "test111",
+    title:
+        "test11gargrgrhehthyjyjystdhdfdfhdthtsjtshjtdsfdgfdaffdfdfdfdfdfdfdfdfdfdfasdfads1",
     date: "2-02-2024",
     size: "19.0mb",
   ),
