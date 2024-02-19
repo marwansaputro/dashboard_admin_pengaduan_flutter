@@ -80,7 +80,7 @@ class DrawerListTile extends StatelessWidget {
       horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
         svgSrc,
-        // colorFilter: ColorFilter.mode(primaryGrey, BlendMode.srcIn),
+        colorFilter: ColorFilter.mode(primaryGrey, BlendMode.srcIn),
         height: 16,
       ),
       title: Text(
