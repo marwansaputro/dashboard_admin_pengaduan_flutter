@@ -94,7 +94,7 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
               child: ConstrainedBox(
-                constraints: BoxConstraints(maxWidth: 500),
+                constraints: BoxConstraints(maxWidth: 530),
                 child: Text(
                   fileInfo.title!,
                   style: TextStyle(color: black),
