@@ -2,7 +2,6 @@ import 'package:admin/layout/padding.dart';
 import 'package:admin/models/RecentFile.dart';
 import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class RecentFiles extends StatelessWidget {
   const RecentFiles({
@@ -43,7 +42,7 @@ class RecentFiles extends StatelessWidget {
               columns: [
                 DataColumn(
                   label: Text(
-                    "File Name",
+                    "Complaint",
                     style: Theme.of(context)
                         .textTheme
                         .titleSmall
@@ -61,7 +60,7 @@ class RecentFiles extends StatelessWidget {
                 ),
                 DataColumn(
                   label: Text(
-                    "Size",
+                    "Status",
                     style: Theme.of(context)
                         .textTheme
                         .titleSmall
@@ -87,16 +86,19 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
       DataCell(
         Row(
           children: [
-            SvgPicture.asset(
+            Image.asset(
               fileInfo.icon!,
-              height: 30,
               width: 30,
+              height: 30,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(
-                fileInfo.title!,
-                style: TextStyle(color: black),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: 500),
+                child: Text(
+                  fileInfo.title!,
+                  style: TextStyle(color: black),
+                ),
               ),
             ),
           ],
@@ -107,7 +109,7 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
         style: TextStyle(color: black),
       )),
       DataCell(Text(
-        fileInfo.size!,
+        fileInfo.status!,
         style: TextStyle(color: black),
       )),
     ],

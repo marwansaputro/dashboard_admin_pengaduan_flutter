@@ -63,17 +63,29 @@ class ProfileCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Image.asset(
-            pathImageAvatarAdmin,
-            height: 38,
+          Container(
+            child: Image.asset(
+              pathImageAvatarAdmin,
+              height: 38,
+            ),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
           ),
           if (!Responsive.isMobile(context))
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-              child: Text("Marwan Saputro"),
+              child: Text(
+                "Marwan Saputro",
+                style: Theme.of(context)
+                    .textTheme
+                    .titleSmall
+                    ?.copyWith(color: black, fontWeight: FontWeight.w500),
+              ),
             ),
-          Icon(Icons.keyboard_arrow_down),
+          Icon(
+            Icons.keyboard_arrow_down,
+            color: darkGrey,
+          ),
         ],
       ),
     );
