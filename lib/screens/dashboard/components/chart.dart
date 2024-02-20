@@ -37,7 +37,7 @@ class Chart extends StatelessWidget {
                 ),
                 SizedBox(height: 3),
                 Text(
-                  "of 128GB",
+                  "of 128",
                   style: Theme.of(context)
                       .textTheme
                       .bodySmall!

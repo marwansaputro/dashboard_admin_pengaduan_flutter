@@ -9,15 +9,13 @@ class RecentFile {
 List demoRecentFiles = [
   RecentFile(
     icon: pathImageAvatarAdmin,
-    title:
-        "test jhdsfjhjsdhfljdsaf jhfsajhfldsfdsf jdflsadflsdf fldsnfldsfds fnflsafdlsadf lnfsldfsaf fgfgfgfffgfgfgfg",
+    title: "Marwan Saputro",
     date: "01-01-2024",
     status: "Sucess",
   ),
   RecentFile(
     icon: pathImageAvatarAdmin,
-    title:
-        "test jhdsfjhjsdhfljdsaf jhfsajhfldsfdsf jdflsadflsdf fldsnfldsfds fnflsafdlsadf lnfsldfsaf fgfgfgfffgfgfgfg",
+    title: "Marwan Saputro",
     date: "01-01-2024",
     status: "Sucess",
   ),
