@@ -48,6 +48,6 @@ List demoMyFiles = [
     svgSrc: pathIconCompleted,
     totalStorage: "2",
     color: primaryGreen,
-    percentage: 2,
+    percentage: 50,
   ),
 ];

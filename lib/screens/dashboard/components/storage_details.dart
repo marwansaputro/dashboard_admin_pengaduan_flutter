@@ -1,4 +1,5 @@
 import 'package:admin/layout/padding.dart';
+import 'package:admin/value/path_image.dart';
 import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -38,19 +39,19 @@ class StorageDetails extends StatelessWidget {
           SizedBox(height: defaultPadding),
           Chart(),
           StorageInfoCard(
-            svgSrc: "assets/images/icons/media.svg",
+            svgSrc: pathIconIcoming,
             title: "Incoming Complaint",
             amountOfFiles: "15",
             numOfFiles: 1328,
           ),
           StorageInfoCard(
-            svgSrc: "assets/images/icons/folder.svg",
+            svgSrc: pathIconProcess,
             title: "Complaint Process",
             amountOfFiles: "14",
             numOfFiles: 1328,
           ),
           StorageInfoCard(
-            svgSrc: "assets/images/icons/unknown.svg",
+            svgSrc: pathIconReject,
             title: "Complaint rejected",
             amountOfFiles: "16",
             numOfFiles: 140,
