@@ -53,8 +53,8 @@ class ProfileCard extends StatelessWidget {
         color: white,
         boxShadow: [
           BoxShadow(
-              color: Theme.of(context).colorScheme.shadow.withOpacity(0.10),
-              blurRadius: 10,
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.15),
+              blurRadius: 15,
               spreadRadius: -5,
               offset: const Offset(0, 5)),
         ],
@@ -64,18 +64,21 @@ class ProfileCard extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            child: Image.asset(
-              pathImageAvatarAdmin,
-              height: 38,
+            width: 35,
+            height: 35,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(35),
+              image: DecorationImage(
+                image: AssetImage(pathImageAvatarAdmin),
+              ),
             ),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
           ),
           if (!Responsive.isMobile(context))
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
               child: Text(
-                "Marwan Saputro",
+                "Admin nih",
                 style: Theme.of(context)
                     .textTheme
                     .titleSmall
@@ -100,13 +103,18 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      style: TextStyle(color: black),
       decoration: InputDecoration(
         hintText: "Search",
+        hintStyle: TextStyle(color: darkGrey),
+        focusColor: black,
         fillColor: white,
         filled: true,
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
+          borderRadius: BorderRadius.all(
+            Radius.circular(10),
+          ),
         ),
         suffixIcon: InkWell(
           onTap: () {},
@@ -115,7 +123,9 @@ class SearchField extends StatelessWidget {
             margin: EdgeInsets.symmetric(horizontal: defaultPadding / 3),
             decoration: BoxDecoration(
               color: primaryGreen,
-              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(10),
+              ),
             ),
             child: SvgPicture.asset(pathIconSearch),
           ),

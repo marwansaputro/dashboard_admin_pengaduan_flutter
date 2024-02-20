@@ -21,8 +21,8 @@ class FileInfoCard extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(10)),
         boxShadow: [
           BoxShadow(
-              color: Theme.of(context).colorScheme.shadow.withOpacity(0.10),
-              blurRadius: 10,
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.15),
+              blurRadius: 15,
               spreadRadius: -5,
               offset: const Offset(0, 5)),
         ],
@@ -36,8 +36,8 @@ class FileInfoCard extends StatelessWidget {
             children: [
               Container(
                 padding: EdgeInsets.all(defaultPadding * 0.75),
-                height: 40,
-                width: 40,
+                height: 50,
+                width: 50,
                 decoration: BoxDecoration(
                   color: info.color!.withOpacity(0.1),
                   borderRadius: const BorderRadius.all(Radius.circular(10)),

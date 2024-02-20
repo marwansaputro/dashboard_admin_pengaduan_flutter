@@ -37,12 +37,11 @@ class RecentFiles extends StatelessWidget {
             width: double.infinity,
             child: DataTable(
               columnSpacing: defaultPadding,
-
               // minWidth: 600,
               columns: [
                 DataColumn(
                   label: Text(
-                    "Complaint",
+                    "Complainant's name",
                     style: Theme.of(context)
                         .textTheme
                         .titleSmall
@@ -86,19 +85,21 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
       DataCell(
         Row(
           children: [
-            Image.asset(
-              fileInfo.icon!,
-              width: 30,
-              height: 30,
+            Container(
+              width: 35,
+              height: 35,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(35),
+                image: DecorationImage(
+                  image: AssetImage(fileInfo.icon!),
+                ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: ConstrainedBox(
-                constraints: BoxConstraints(maxWidth: 500),
-                child: Text(
-                  fileInfo.title!,
-                  style: TextStyle(color: black),
-                ),
+              child: Text(
+                fileInfo.title!,
+                style: TextStyle(color: black),
               ),
             ),
           ],

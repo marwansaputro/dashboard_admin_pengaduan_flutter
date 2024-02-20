@@ -14,7 +14,9 @@ const pathIconStar = 'assets/images/icons/staricon.svg';
 const pathIconWhatsapp = 'assets/images/icons/whatsapp.svg';
 const pathIconDashboard = 'assets/images/icons/menu_dashboard.svg';
 const pathIconSearch = 'assets/images/icons/search.svg';
-const pathIconIcoming = 'assets/images/icons/complaint-icon.svg';
-const pathIconProcess = 'assets/images/icons/administrator-developer-icon.svg';
-const pathIconReject = 'assets/images/icons/wrong-file-icon.svg';
-const pathIconCompleted = 'assets/images/icons/right-file-icon.svg';
+const pathIconIcoming = 'assets/images/icons/complaint-svgrepo-com.svg';
+const pathIconProcess = 'assets/images/icons/process-arrows-svgrepo-com.svg';
+const pathIconReject =
+    'assets/images/icons/basic-denied-reject-svgrepo-com.svg';
+const pathIconCompleted =
+    'assets/images/icons/approve-basic-checklist-svgrepo-com.svg';
