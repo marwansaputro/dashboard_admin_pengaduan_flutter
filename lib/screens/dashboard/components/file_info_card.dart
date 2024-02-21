@@ -35,7 +35,7 @@ class FileInfoCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                padding: EdgeInsets.all(defaultPadding * 0.75),
+                padding: EdgeInsets.all(10),
                 height: 50,
                 width: 50,
                 decoration: BoxDecoration(
