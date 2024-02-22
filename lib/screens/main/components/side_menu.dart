@@ -19,7 +19,12 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             title: "Dashboard",
             svgSrc: pathIconDashboard,
-            press: () {},
+            press: () => {
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(builder: (context) => DashboardScreen()),
+              // ),
+            },
           ),
           // DrawerListTile(
           //   title: "Transaction",
