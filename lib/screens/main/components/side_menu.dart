@@ -1,3 +1,5 @@
+import 'package:admin/screens/dashboard/dashboard_screen.dart';
+import 'package:admin/screens/notification/notification_screen.dart';
 import 'package:admin/value/path_image.dart';
 import 'package:admin/value/theme.dart';
 import 'package:flutter/material.dart';
@@ -20,36 +22,21 @@ class SideMenu extends StatelessWidget {
             title: "Dashboard",
             svgSrc: pathIconDashboard,
             press: () => {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => DashboardScreen()),
-              // ),
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DashboardScreen()),
+              ),
             },
           ),
-          // DrawerListTile(
-          //   title: "Transaction",
-          //   svgSrc: "assets/icons/menu_tran.svg",
-          //   press: () {},
-          // ),
-          // DrawerListTile(
-          //   title: "Task",
-          //   svgSrc: "assets/icons/menu_task.svg",
-          //   press: () {},
-          // ),
-          // DrawerListTile(
-          //   title: "Documents",
-          //   svgSrc: "assets/icons/menu_doc.svg",
-          //   press: () {},
-          // ),
-          // DrawerListTile(
-          //   title: "Store",
-          //   svgSrc: "assets/icons/menu_store.svg",
-          //   press: () {},
-          // ),
           DrawerListTile(
             title: "Notification",
             svgSrc: pathIconNotification,
-            press: () {},
+            press: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => NotificationScreen()),
+              ),
+            },
           ),
           DrawerListTile(
             title: "Profile",
